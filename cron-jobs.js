@@ -52,7 +52,7 @@ export function startCronJobs() {
                         "\ndepth: " + pos.sell.bids.depth +
                         (pos.sell.marketUrl? "\n[" + pos.sell.marketUrl + "](" + pos.sell.marketUrl + ")" : "");
 
-                    await managerBot.sendMessage(chatIDForMessages, text, { parse_mode: 'Markdown' });
+                    await managerBot.sendMessage(chatIDForMessages, text, { parse_mode: 'Markdown', message_thread_id: 428 });
                 }
             })();
         });
